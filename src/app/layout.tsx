@@ -35,11 +35,13 @@ export default function RootLayout({
 
         <footer className="section border-t border-white/10">
           <div className="container flex flex-col items-center gap-3 text-sm text-neutral-400">
-            <div className="flex gap-4">
-              <a href="#" aria-label="X (dummy)" className="hover:text-neutral-200">X</a>
-              <a href="#" aria-label="GitHub (dummy)" className="hover:text-neutral-200">GitHub</a>
-              <a href="#" aria-label="Email (dummy)" className="hover:text-neutral-200">Email</a>
-            </div>
+            <a
+              href="https://github.com/yukihirarinta"
+              aria-label="GitHub"
+              className="hover:text-neutral-200"
+            >
+              GitHub
+            </a>
             <p>© {new Date().getFullYear()} Yukihira Rinta</p>
           </div>
         </footer>

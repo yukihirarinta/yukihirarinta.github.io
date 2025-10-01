@@ -24,9 +24,14 @@ export default function RootLayout({
               Yukihira Rinta
             </Link>
             <div className="flex items-center gap-6 text-sm">
-              <Link href="/works" className="hover:text-white/90">Works</Link>
-              <Link href="/about" className="hover:text-white/90">About</Link>
-              <Link href="/contact" className="hover:text-white/90">Contact</Link>
+              <a
+                href="https://github.com/yukihirarinta"
+                className="hover:text-white/90"
+                target="_blank"
+                rel="noreferrer"
+              >
+                About
+              </a>
             </div>
           </nav>
         </header>
@@ -35,13 +40,6 @@ export default function RootLayout({
 
         <footer className="section border-t border-white/10">
           <div className="container flex flex-col items-center gap-3 text-sm text-neutral-400">
-            <a
-              href="https://github.com/yukihirarinta"
-              aria-label="GitHub"
-              className="hover:text-neutral-200"
-            >
-              GitHub
-            </a>
             <p>© {new Date().getFullYear()} Yukihira Rinta</p>
           </div>
         </footer>

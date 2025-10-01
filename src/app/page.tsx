@@ -3,7 +3,6 @@ export default function HomePage() {
     <section className="section">
       <div className="container">
         <h1 className="text-2xl font-semibold tracking-tight md:text-3xl">Works</h1>
-        <p className="mt-2 text-neutral-400">今後追加予定のショーケース。</p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[1, 2, 3, 4, 5, 6].map((i) => (
             <div key={i} className="card p-5">

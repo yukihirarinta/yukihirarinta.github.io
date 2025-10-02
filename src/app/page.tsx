@@ -1,15 +1,45 @@
+const projects = [
+  {
+    title: "Blog",
+    description: "Personal blog where I share updates and articles.",
+    href: "https://www.beaskyblue.com/",
+  },
+  { title: "Project 2", description: "Currently under development." },
+  { title: "Project 3", description: "Currently under development." },
+  { title: "Project 4", description: "Currently under development." },
+  { title: "Project 5", description: "Currently under development." },
+  { title: "Project 6", description: "Currently under development." },
+];
+
 export default function HomePage() {
   return (
     <section className="section">
       <div className="container">
         <h1 className="text-2xl font-semibold tracking-tight md:text-3xl">Works</h1>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="card p-5">
-              <div className="aspect-video w-full rounded-md bg-gradient-to-br from-brand-500/30 via-blue-500/20 to-purple-500/20" />
-              <h3 className="mt-4 font-medium">Project {i}</h3>
-              <p className="mt-1 text-sm text-neutral-400">ダミーの説明テキストです。</p>
-            </div>
+          {projects.map((project) => (
+            project.href ? (
+              <a
+                key={project.title}
+                href={project.href}
+                target="_blank"
+                rel="noreferrer"
+                className="card p-5 transition hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div className="aspect-video w-full rounded-md bg-gradient-to-br from-brand-500/30 via-blue-500/20 to-purple-500/20" />
+                <h3 className="mt-4 font-medium">{project.title}</h3>
+                <p className="mt-1 text-sm text-neutral-400">{project.description}</p>
+              </a>
+            ) : (
+              <div
+                key={project.title}
+                className="card p-5 transition hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div className="aspect-video w-full rounded-md bg-gradient-to-br from-brand-500/30 via-blue-500/20 to-purple-500/20" />
+                <h3 className="mt-4 font-medium">{project.title}</h3>
+                <p className="mt-1 text-sm text-neutral-400">{project.description}</p>
+              </div>
+            )
           ))}
         </div>
       </div>

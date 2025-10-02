@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">BeaSkyblue Blog Thumbnail</title>
+  <desc id="desc">A centered yellow circle stacked above the text BeaSkyblue on a sky-blue background.</desc>
+  <rect width="1200" height="630" fill="#7EC1E7"/>
+  <foreignObject width="1200" height="630">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:100%;display:flex;align-items:center;justify-content:center;">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:48px;font-family:'Inter', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:144px;color:#ffffff;">
+        <span style="display:inline-block;width:220px;height:220px;border-radius:50%;background:#F9C623;"></span>
+        <span>BeaSkyblue</span>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

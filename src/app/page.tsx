@@ -49,7 +49,7 @@ export default function HomePage() {
                     />
                   </div>
                 ) : (
-                  <div className="aspect-video w-full rounded-md bg-gradient-to-br from-brand-500/30 via-blue-500/20 to-purple-500/20" />
+                  <div className="aspect-video w-full rounded-md bg-gradient-to-br from-brand-300/45 via-sky-200/45 to-rose-200/45" />
                 )}
                 <h3 className="mt-4 font-medium">{project.title}</h3>
                 <p className="mt-1 text-sm text-neutral-400">{project.description}</p>
@@ -59,7 +59,7 @@ export default function HomePage() {
                 key={project.title}
                 className="card p-5 transition hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="aspect-video w-full rounded-md bg-gradient-to-br from-brand-500/30 via-blue-500/20 to-purple-500/20" />
+                <div className="aspect-video w-full rounded-md bg-gradient-to-br from-brand-300/45 via-sky-200/45 to-rose-200/45" />
                 <h3 className="mt-4 font-medium">{project.title}</h3>
                 <p className="mt-1 text-sm text-neutral-400">{project.description}</p>
               </div>
@@ -70,4 +70,3 @@ export default function HomePage() {
     </section>
   );
 }
-

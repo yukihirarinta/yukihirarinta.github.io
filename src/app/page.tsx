@@ -21,6 +21,9 @@ const projects: Project[] = [
   { title: "Project 4", description: "Currently under development." },
   { title: "Project 5", description: "Currently under development." },
   { title: "Project 6", description: "Currently under development." },
+  { title: "Project 7", description: "Currently under development." },
+  { title: "Project 8", description: "Currently under development." },
+  { title: "Project 9", description: "Currently under development." },
 ];
 
 export default function HomePage() {

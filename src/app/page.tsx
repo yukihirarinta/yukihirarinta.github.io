@@ -73,7 +73,7 @@ function ProjectGrid({ projects }: { projects: Project[] }) {
 
 export default function HomePage() {
   return (
-    <main className="space-y-6 sm:space-y-8">
+    <div className="space-y-6 sm:space-y-8">
       <section className="section pb-8 md:pb-10">
         <div className="container">
           <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">Features</h1>
@@ -87,6 +87,6 @@ export default function HomePage() {
           <ProjectGrid projects={projects} />
         </div>
       </section>
-    </main>
+    </div>
   );
 }

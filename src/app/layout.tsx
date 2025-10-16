@@ -5,10 +5,34 @@ import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const siteUrl = new URL('https://yukihirarinta.github.io');
+const siteTitle = 'Yukihira Rinta';
+const siteDescription = 'Showcase site';
+const shareImage = '/blog-thumbnail.svg';
+
 export const metadata: Metadata = {
-  title: 'Yukihira Rinta',
-  description: 'Showcase site built with Next.js',
-  metadataBase: new URL('https://yukihirarinta.github.io'),
+  metadataBase: siteUrl,
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: siteTitle,
+    locale: 'ja_JP',
+    type: 'website',
+    images: [
+      {
+        url: shareImage,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteTitle,
+    description: siteDescription,
+    images: [shareImage],
+  },
   icons: [{ rel: 'icon', url: '/favicon.svg' }],
 };
 

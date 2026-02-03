@@ -5,7 +5,7 @@ export type Link = {
 
 export const links: Link[] = [
   {
-    label: "Be a Sky Blue",
+    label: "BeaSkyblue",
     href: "https://www.beaskyblue.com/",
   },
   {

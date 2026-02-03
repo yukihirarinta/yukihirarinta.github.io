@@ -4,6 +4,11 @@
   --bg: #f7f4ee;
   --bg-glow: #fff8ef;
   --ink: #16130f;
+  --card-bg: rgba(255, 255, 255, 0.65);
+  --card-border: rgba(22, 19, 15, 0.08);
+  --card-shadow: 0 10px 30px rgba(22, 19, 15, 0.12);
+  --card-shadow-hover: 0 14px 36px rgba(22, 19, 15, 0.16);
+  --accent: #b87431;
 }
 
 @theme inline {
@@ -37,8 +42,74 @@ body {
   animation: fade-up 700ms ease-out both;
 }
 
+.link-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  text-decoration: none;
+  box-shadow: var(--card-shadow);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+  overflow: hidden;
+}
+
+.link-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.65),
+    rgba(255, 255, 255, 0)
+  );
+  opacity: 0;
+  transition: opacity 220ms ease;
+  pointer-events: none;
+}
+
+.link-card:hover,
+.link-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(184, 116, 49, 0.35);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.link-card:hover::before,
+.link-card:focus-visible::before {
+  opacity: 1;
+}
+
+.link-card:focus-visible {
+  outline: 2px solid rgba(184, 116, 49, 0.5);
+  outline-offset: 3px;
+}
+
+.link-card__icon {
+  font-size: 0.95rem;
+  color: var(--accent);
+  opacity: 0.9;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up {
     animation: none;
+  }
+
+  .link-card {
+    transition: none;
+    transform: none;
+  }
+
+  .link-card:hover,
+  .link-card:focus-visible {
+    transform: none;
   }
 }

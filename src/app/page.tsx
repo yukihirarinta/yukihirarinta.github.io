@@ -4,7 +4,11 @@ export default function Home() {
   return (
     <main className="min-h-screen px-6 py-24">
       <div className="mx-auto w-full max-w-md">
-        <h1 className="sr-only">Links</h1>
+        <header className="mb-10">
+          <h1 className="text-3xl font-semibold tracking-tight text-stone-900">
+            yukihirarinta
+          </h1>
+        </header>
         <ul className="space-y-4">
           {links.map((link, index) => (
             <li
@@ -14,11 +18,14 @@ export default function Home() {
             >
               <a
                 href={link.href}
-                className="block text-xl font-medium tracking-tight text-stone-900 underline-offset-4 hover:underline"
+                className="link-card text-lg font-medium tracking-tight text-stone-900"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {link.label}
+                <span>{link.label}</span>
+                <span className="link-card__icon" aria-hidden="true">
+                  &gt;
+                </span>
               </a>
             </li>
           ))}

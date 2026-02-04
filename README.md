@@ -1,6 +1,6 @@
 # yukihirarinta.github.io
 
-A minimal link-only portfolio built with Next.js (App Router), TypeScript, and Tailwind CSS.
+A showcase of services offered by yukihirarinta, built with Next.js.
 
 ## Development
 
@@ -8,7 +8,7 @@ A minimal link-only portfolio built with Next.js (App Router), TypeScript, and T
 pnpm dev
 ```
 
-## Build (static export)
+## Build
 
 ```bash
 pnpm build
@@ -16,13 +16,4 @@ pnpm build
 
 ## Edit Links
 
-- `src/data/links.ts`
-
-## Main Page
-
-- `src/app/page.tsx`
-
-## OGP
-
-- Image: `public/og.png`
-- Metadata: `src/app/layout.tsx`
+`src/data/links.ts`

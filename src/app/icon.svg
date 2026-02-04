@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>BeaSkyblue icon (variant B)</title>
+  <desc>Large muted blue circle with a centered warm sun circle.</desc>
+  <circle cx="256" cy="256" r="255.3" fill="#6AA3BF"/>
+  <circle cx="256" cy="256" r="127.65" fill="#E8B95B"/>
+</svg>

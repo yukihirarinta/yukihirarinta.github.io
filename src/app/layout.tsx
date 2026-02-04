@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 
@@ -37,6 +37,10 @@ export const metadata: Metadata = {
     description,
     images: ["/og.png"],
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#6AA3BF",
 };
 
 export default function RootLayout({

@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f7f4ee;
-  --bg-glow: #fff8ef;
-  --ink: #16130f;
-  --card-bg: rgba(255, 255, 255, 0.65);
-  --card-border: rgba(22, 19, 15, 0.08);
-  --card-shadow: 0 10px 30px rgba(22, 19, 15, 0.12);
-  --card-shadow-hover: 0 14px 36px rgba(22, 19, 15, 0.16);
-  --accent: #b87431;
+  --bg: #6aa3bf;
+  --bg-glow: #7fb8d1;
+  --ink: #0f2433;
+  --card-bg: #f3f7fb;
+  --card-border: rgba(255, 255, 255, 0.65);
+  --card-shadow: 0 16px 38px rgba(15, 36, 51, 0.14);
+  --card-shadow-hover: 0 22px 50px rgba(15, 36, 51, 0.18);
+  --accent: #e8b95b;
 }
 
 @theme inline {
@@ -20,8 +20,8 @@
 body {
   min-height: 100%;
   background:
-    radial-gradient(1200px 600px at 20% 0%, var(--bg-glow), transparent 70%),
-    radial-gradient(900px 500px at 85% 20%, #f1ece3, transparent 65%),
+    radial-gradient(1200px 600px at 20% 0%, rgba(255, 255, 255, 0.55), transparent 70%),
+    radial-gradient(900px 500px at 85% 15%, var(--bg-glow), transparent 65%),
     var(--bg);
   color: var(--ink);
   font-family: var(--font-sora);
@@ -67,7 +67,7 @@ body {
   inset: 0;
   background: linear-gradient(
     120deg,
-    rgba(255, 255, 255, 0.65),
+    rgba(255, 255, 255, 0.72),
     rgba(255, 255, 255, 0)
   );
   opacity: 0;
@@ -78,7 +78,7 @@ body {
 .link-card:hover,
 .link-card:focus-visible {
   transform: translateY(-2px);
-  border-color: rgba(184, 116, 49, 0.35);
+  border-color: rgba(232, 185, 91, 0.35);
   box-shadow: var(--card-shadow-hover);
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .link-card:focus-visible {
-  outline: 2px solid rgba(184, 116, 49, 0.5);
+  outline: 2px solid rgba(232, 185, 91, 0.4);
   outline-offset: 3px;
 }
 

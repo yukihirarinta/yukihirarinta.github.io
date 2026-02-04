@@ -2,12 +2,10 @@ import { links } from "@/data/links";
 
 export default function Home() {
   return (
-    <main className="min-h-screen px-6 py-24">
+    <main className="min-h-screen px-6 py-24 text-[color:var(--ink)]">
       <div className="mx-auto w-full max-w-md">
-        <header className="mb-10">
-          <h1 className="text-3xl font-semibold tracking-tight text-stone-900">
-            yukihirarinta
-          </h1>
+        <header className="mb-10 text-center">
+          <h1 className="text-3xl font-semibold tracking-tight">yukihirarinta</h1>
         </header>
         <ul className="space-y-4">
           {links.map((link, index) => (
@@ -18,7 +16,7 @@ export default function Home() {
             >
               <a
                 href={link.href}
-                className="link-card text-lg font-medium tracking-tight text-stone-900"
+                className="link-card text-lg font-medium tracking-tight"
                 target="_blank"
                 rel="noopener noreferrer"
               >
